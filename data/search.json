@@ -1,0 +1,360 @@
+[
+  {
+    "kind": "youtube#searchListResponse",
+    "etag": "jjn0lw0qFlCHnpiCb0CishEMwqI",
+    "nextPageToken": "CAUQAA",
+    "regionCode": "IL",
+    "pageInfo": {
+      "totalResults": 1000000,
+      "resultsPerPage": 5
+    },
+    "items": [
+      {
+        "kind": "youtube#searchResult",
+        "etag": "IQCFK-55s-c2nNKM739uN5KugkA",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "pSY3i5XHHXo"
+        },
+        "snippet": {
+          "publishedAt": "2023-06-01T20:00:10Z",
+          "channelId": "UCV_CsAy5CNBX_uwDQ7RMe1Q",
+          "title": "Central Cee x Dave - Sprinter [Music Video]",
+          "description": "Stream Sprinter: https://davexcench.lnk.to/Sprinter Subscribe: https://www.youtube.com/user/CentralCee?sub_confirmation=1 ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/pSY3i5XHHXo/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/pSY3i5XHHXo/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/pSY3i5XHHXo/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Central Cee",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-06-01T20:00:10Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "KDwUvnkGTiKL5A9roce2Vo194Vo",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "rwYrEEka1mc"
+        },
+        "snippet": {
+          "publishedAt": "2019-02-23T16:00:07Z",
+          "channelId": "UCAj9nn-gOcKuD4ropg44HCw",
+          "title": "90&#39;s Hip Hop Mix #01 | Best of Old School Rap Songs | Throwback Rap Classics | Westcoast | Eastcoast",
+          "description": "The best of 90's Hip Hop! Strictly Old School Rap Songs from the Eastcoast all the way to the Westcoast. Rap Classics by some of ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/rwYrEEka1mc/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/rwYrEEka1mc/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/rwYrEEka1mc/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "DJ Noize",
+          "liveBroadcastContent": "none",
+          "publishTime": "2019-02-23T16:00:07Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "H8B9sMU2SSF9rPhEcVC4biNI868",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "5qm8PH4xAss"
+        },
+        "snippet": {
+          "publishedAt": "2009-06-16T23:36:21Z",
+          "channelId": "UC0sL86jDLgs2fGRD-XBnPQA",
+          "title": "50 Cent - In Da Club (Official Music Video)",
+          "description": "CELEBRATING ONE BILLION VIEWS!! REMASTERED IN HD! UP TO 4K!! Get your 50 Cent & G-Unit Merch here: ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/5qm8PH4xAss/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/5qm8PH4xAss/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/5qm8PH4xAss/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "50CentVEVO",
+          "liveBroadcastContent": "none",
+          "publishTime": "2009-06-16T23:36:21Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "LrTC9t6jLResgCYgetpRLjoWRV8",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "M0k5YaaA6Ko"
+        },
+        "snippet": {
+          "publishedAt": "2024-06-22T15:00:19Z",
+          "channelId": "UCAj9nn-gOcKuD4ropg44HCw",
+          "title": "New Rap Songs 2024 Mix June | Trap Tape #101 | New Hip Hop 2024 Mixtape | DJ Noize",
+          "description": "The best of new Rap songs of June 2024 in the mix! New Hip Hop 2024 mixtape. Join my Patreon community and get access to ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/M0k5YaaA6Ko/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/M0k5YaaA6Ko/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/M0k5YaaA6Ko/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "DJ Noize",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-06-22T15:00:19Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "SvTgWPU7tUSLramHu-FeNOd5u3o",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "tBKYI3-3lMg"
+        },
+        "snippet": {
+          "publishedAt": "2021-01-11T19:00:09Z",
+          "channelId": "UC47kJWRBD-NREBvmBg5kWeA",
+          "title": "King Von - Armed &amp; Dangerous (Official Video)",
+          "description": "From the album \"Welcome to O'Block\". Out now! Stream: https://music.empi.re/oblock.oyd Shot by @jerryphd Follow King Von: ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/tBKYI3-3lMg/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/tBKYI3-3lMg/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/tBKYI3-3lMg/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "King Von",
+          "liveBroadcastContent": "none",
+          "publishTime": "2021-01-11T19:00:09Z"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "youtube#searchListResponse",
+    "etag": "EftRXj8BuMImr0t3XngQnk1ehYY",
+    "nextPageToken": "CAUQAA",
+    "regionCode": "IL",
+    "pageInfo": {
+      "totalResults": 1000000,
+      "resultsPerPage": 5
+    },
+    "items": [
+      {
+        "kind": "youtube#searchResult",
+        "etag": "D9yxgY8jiJoxmviVJmbM_pLjxoI",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "VZt7J0iaUD0"
+        },
+        "snippet": {
+          "publishedAt": "2010-12-15T02:07:36Z",
+          "channelId": "UCwXkhsm43quK9Thm9mfUpiQ",
+          "title": "Suzanne Vega - Luka",
+          "description": "REMASTERED IN HD! Official Music Video for Luka performed by Suzanne Vega. Follow Suzanne Vega: Instagram: ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/VZt7J0iaUD0/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/VZt7J0iaUD0/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/VZt7J0iaUD0/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "SuzanneVegaVEVO",
+          "liveBroadcastContent": "none",
+          "publishTime": "2010-12-15T02:07:36Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "Ynfqi6yfvc1L9KFCjf1acmwsKwg",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "j4jtIDaeaWI"
+        },
+        "snippet": {
+          "publishedAt": "2021-10-22T16:00:33Z",
+          "channelId": "UCwXkhsm43quK9Thm9mfUpiQ",
+          "title": "Suzanne Vega, DNA - Tom&#39;s Diner",
+          "description": "Official Music Video for Tom's Diner performed by Suzanne Vega ft. DNA. #SuzanneVega #TomsDiner.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/j4jtIDaeaWI/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/j4jtIDaeaWI/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/j4jtIDaeaWI/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "SuzanneVegaVEVO",
+          "liveBroadcastContent": "none",
+          "publishTime": "2021-10-22T16:00:33Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "6rQTHjiJamU0YpLfxi2xDuFvoEg",
+        "id": {
+          "kind": "youtube#channel",
+          "channelId": "UCkFnpqYuMxl7tNyq5ouENXw"
+        },
+        "snippet": {
+          "publishedAt": "2013-11-30T03:30:52Z",
+          "channelId": "UCkFnpqYuMxl7tNyq5ouENXw",
+          "title": "Suzanne Vega",
+          "description": "The Official YouTube Channel for Suzanne Vega.",
+          "thumbnails": {
+            "default": {
+              "url": "https://yt3.ggpht.com/ytc/AIdro_mP81eX1jVyYaAoHCp_8FBfVSzILBpzgCdnsK--BmTv_JY=s88-c-k-c0xffffffff-no-rj-mo"
+            },
+            "medium": {
+              "url": "https://yt3.ggpht.com/ytc/AIdro_mP81eX1jVyYaAoHCp_8FBfVSzILBpzgCdnsK--BmTv_JY=s240-c-k-c0xffffffff-no-rj-mo"
+            },
+            "high": {
+              "url": "https://yt3.ggpht.com/ytc/AIdro_mP81eX1jVyYaAoHCp_8FBfVSzILBpzgCdnsK--BmTv_JY=s800-c-k-c0xffffffff-no-rj-mo"
+            }
+          },
+          "channelTitle": "Suzanne Vega",
+          "liveBroadcastContent": "none",
+          "publishTime": "2013-11-30T03:30:52Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "oNuI9NeALNOOrWxCstEGpCDgqVs",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "AndEMO__p2U"
+        },
+        "snippet": {
+          "publishedAt": "2014-02-10T19:48:28Z",
+          "channelId": "UC4eYXhJI4-7wSWc8UNRwD4A",
+          "title": "Suzanne Vega: NPR Music Tiny Desk Concert",
+          "description": "In pop-music circles, Suzanne Vega is known almost entirely for two songs from the late 1980s: the child-abuse ballad \"Luka\" and ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/AndEMO__p2U/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/AndEMO__p2U/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/AndEMO__p2U/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "NPR Music",
+          "liveBroadcastContent": "none",
+          "publishTime": "2014-02-10T19:48:28Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "KcNYWm3IqsjwxnfTp5nhsyEAmlQ",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "05AHPFPpHIM"
+        },
+        "snippet": {
+          "publishedAt": "2010-12-15T02:03:20Z",
+          "channelId": "UCwXkhsm43quK9Thm9mfUpiQ",
+          "title": "Suzanne Vega - Solitude Standing",
+          "description": "Music video by Suzanne Vega performing Solitude Standing. (C) 1990 A&M Records.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/05AHPFPpHIM/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/05AHPFPpHIM/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/05AHPFPpHIM/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "SuzanneVegaVEVO",
+          "liveBroadcastContent": "none",
+          "publishTime": "2010-12-15T02:03:20Z"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,104 @@
+.station-details {
+
+
+
+    display: grid;
+    grid-template-columns: 1rem 1fr 1rem;
+
+    &>* {
+        grid-column: 2;
+    }
+
+    &>.full {
+        grid-column: 1 / -1;
+    }
+
+    & .app-header-continer {
+        position: sticky;
+        top: 0;
+         z-index: 6;
+    }
+
+    & header {
+
+        // background:rgba(179,154,154,1);
+        border-radius: 15px 15px 0 0;
+    }
+
+    & .header {
+        display: grid;
+        grid-template-columns: subgrid;
+
+
+        & .intro-outer {
+
+            grid-column: 2 / 3;
+
+            &>img {
+                width: 100%;
+                max-width: 200px;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+            }
+
+            & h2 {
+                // font-size: 5em;
+                margin-left: -5px;
+            }
+
+            & .intro-inner.sb {
+                align-content: space-between;
+            }
+
+            @include for-mobile-layout {
+                grid-template-columns: 1fr;
+
+                & .color-component {
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &>img {
+                    max-width: 140px
+                }
+
+                & h2 {
+                    font-size: 30px;
+                }
+            }
+
+
+
+        }
+    }
+
+
+ 
+
+    & .station-details-play {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: start;
+    }
+
+    & .app-search-wrapper {
+        width: 100%;
+        & .search-form {
+            width:50%;
+        }
+    }
+
+    & .svg-big {
+        margin: 20px;
+    }
+
+    .song-list {
+        grid-column: 2 / -1;
+    }
+
+    .app-search {
+        grid-column: 2 / 3;
+    }
+
+
+}

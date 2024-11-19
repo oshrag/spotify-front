@@ -1,0 +1,50 @@
+// Colors
+$primery-clr: #1ed760;
+
+$dark-clr1: #121212; //grid background
+$dark-clr2: #000;
+$dark-clr3: #232323; //buttons bg
+$dark-clr4: #282828; //modal bg
+$dark-clr5: #3e3e3e; //li in modal - hover
+$dark-clr6: #1f1f1f; //hover on station preview
+
+$bgc-top-result: #181818;
+$bgc-search: #242424;
+$bgc-back-forward-btns: rgba(0, 0, 0, .7);
+$bgc-login-signup-btn: #1ed760;
+$bgc-login-signup-btn-hover: #3be477;
+$bg-gradient-login-signup: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
+$bgc-user-modal-hover: hsla(0, 0%, 100%, .1);
+$btn-text-clr1: #a7a7a7;
+
+$input-text-clr1: #949494;
+$input-text-clr2: #ffffff;
+$input-bgc-clr: #2a2a2a;
+
+$light-clr1: #fdfdfd; //buttons color
+$light-clr2: #fff;
+
+
+
+$gray1: #ddd;
+$gray2: #aaa;
+$gray3: #777;
+$gray4: #333;
+$gray5: #b3b3b3;
+$gray6: #7c7c7c;
+$gray7: #818181;
+
+
+
+$user-msg-background: #ddd;
+$user-msg-clr: #333;
+// $user-msg-success: #b0e3a5;
+// $user-msg-warrning: #eea08c;
+
+
+
+
+// Breakpoints
+$mobile-breakpoint: 460px;
+$narrow-breakpoint: 720px;
+$normal-breakpoint: 960px;

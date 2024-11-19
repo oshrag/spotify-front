@@ -1,0 +1,72 @@
+{
+    "kind": "youtube#videoListResponse",
+    "etag": "y_j_6F3cF_bO4yrqh2cQ4ieZ5Ng",
+    "items": [
+        {
+            "kind": "youtube#video",
+            "etag": "TPdakwd7goF4UQ-qBfiLU4fp87I",
+            "id": "vHUkRljRZDU",
+            "contentDetails": {
+                "duration": "PT3M6S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "true",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+            }
+        },
+        {
+            "kind": "youtube#video",
+            "etag": "_uYTi8NSCakuw6i27G1ntZYATl4",
+            "id": "pSY3i5XHHXo",
+            "contentDetails": {
+                "duration": "PT3M50S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "false",
+                "licensedContent": false,
+                "regionRestriction": {
+                    "blocked": [
+                        "BY",
+                        "RU"
+                    ]
+                },
+                "contentRating": {},
+                "projection": "rectangular"
+            }
+        },
+        {
+            "kind": "youtube#video",
+            "etag": "LHUQYKZ2PSDyLb4rrxCgBzEsUD0",
+            "id": "QIYGE5lnYXo",
+            "contentDetails": {
+                "duration": "PT2M57S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "true",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+            }
+        },
+        {
+            "kind": "youtube#video",
+            "etag": "n9gptasavCREdgTxM5-YtTfeqFs",
+            "id": "XbGs_qK2PQA",
+            "contentDetails": {
+                "duration": "PT6M10S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "true",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+            }
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 4,
+        "resultsPerPage": 4
+    }
+}

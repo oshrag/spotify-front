@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    font-size:14px;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: opensans;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+::selection {
+    background-color: $dark-clr1;
+    color: $light-clr2;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: opensans;
+    margin: 0 0 0.6em;
+    // line-height: 1;
+}
+
+
+// section,
+// main,
+// footer {
+//     padding: 5px;
+// }
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// span {
+//     margin: 0;
+// }
+
+// html {
+//     font-family: montserrat;
+//     line-height: 1.6;
+//     color: $dark-clr2;
+// }
+
+// body {
+//     font-size: rem(18px);
+//     margin: 0;
+//     max-width: 1024px;
+//     margin: auto;
+// }
+
+
+
+
+
+.intro-outer {
+    display:grid;
+    grid-template-columns: auto 1fr;
+    justify-content: start;
+    gap:10px;
+
+    & img {
+        border-radius: 5px;
+    }
+    
+    & .intro-inner {
+        display: grid;
+        align-content: space-evenly;
+    }
+}
+
+
+a:hover {
+    text-decoration:none;
+}
+
+button {
+    background-color: inherit;
+    border:none;
+    cursor: pointer;
+}
+
+    
+
+i {
+    @include icon;
+    &.active { fill: $primery-clr; }
+}
+
+
+.svg-big {
+    width: 50px;
+    height: 50px;
+    background: $primery-clr;
+    border-radius:50%;
+    padding:15px;
+    & i {
+      fill: $dark-clr2;
+    }
+    &:hover { transform: scale(1.04); }
+    &.regular-color {
+        background: none;
+        & i {
+            fill: $light-clr2;
+          }
+    }
+}
+
+
+//btn with background - playlist, arstist...
+.btn-type-1 {
+    @include btn;
+    padding: 8px 10px;
+    &:hover {
+        background-color: lighten($dark-clr3, 5%);  
+    }
+}
+
+
+
+
+//btn with icon - home, search
+.btn-type-2 {
+    color:$btn-text-clr1; 
+    display:grid;
+    grid-template-columns: auto auto;
+    align-items:center;
+    justify-content: start;
+    gap:20px;
+    font-size:17px;
+   
+
+    & i {
+        fill:$btn-text-clr1;
+    }
+    &:hover, &.current {
+        color:$light-clr2;
+        & i {
+            fill:$light-clr2;
+        }
+    }
+    // &.active i, &.current i { fill:$primery-clr;} - interapt library in mobile
+    &.active i { fill:$primery-clr;}
+
+
+
+
+    nav & {
+        @include for-mobile-layout { 
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+            justify-items: center;
+            justify-content: center;
+            font-size: 11px;
+        }
+    }
+   
+    
+   
+
+}
+
+a.btn-type-2 i {  margin-top:5px;    } //strange but needed to align search in nav
+
+//btn - like type 1 with border - add / added
+.btn-type-3 {
+    @include btn;
+    border:1px solid $light-clr1;
+    outline: 1px solid transparent;
+    &:hover {
+        outline-width: 2px;
+        outline-color: $light-clr1;
+        background-color: lighten($dark-clr3, 5%); 
+        font-size:14px;
+    }
+}
+
+// send in editDetails component
+.btn-type-4 {
+    @include btn;
+    background: $light-clr1;
+    color: $dark-clr2;
+    padding:15px;
+}
+
+
+//only icons - plus, more
+.icon-type-1 {
+    &.big i {
+        width:28px;
+    }
+
+    & i {  
+        background-color: $dark-clr1;
+        fill:$btn-text-clr1;
+        display:flex;
+        width:25px;
+        padding:5px;
+       
+        
+    }
+    
+    &:hover i { 
+        background-color: lighten($dark-clr1, 10%);  
+    }
+}
+
+
+//only icons - in player
+.icon-type-2 {
+    & i {  
+        background-color: $dark-clr1;
+        fill:$btn-text-clr1;
+        display:flex;
+        width:25px;
+        padding:5px;
+        &.active {
+            fill: $primery-clr;
+        }
+    }
+    &:hover i { 
+        fill: lighten($btn-text-clr1, 30%);
+        &.active {
+            fill: $primery-clr;
+        }
+    }
+}
+
+
+//only icons - play in player
+.icon-type-3 {
+    & i {  
+        background-color: $light-clr1;
+        fill:$dark-clr2;
+        display:flex;
+        width:30px;
+        padding:5px;
+        border:1px solid $light-clr1;
+        outline: 1px solid transparent;
+    }
+    &:hover i { 
+        outline-width: 2px;
+        outline-color: $light-clr1;
+    }
+   
+}
+
+
+
+
+
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+// ::-webkit-scrollbar-track {
+//     background: #3f3a3a;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background-color: #cb1313;
+//     border-radius: 10px;
+//     border: 3px solid #310acb; /* רווח מסביב לאצבעית */
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//     background: #555;
+// }
+
+/* Firefox */
+* {
+    scrollbar-color: $dark-clr1 $dark-clr1;
+    scrollbar-width: thin;
+}
+
+.station-list-wrapper:hover,  main:hover {
+    scrollbar-color: $dark-clr5 $dark-clr1;
+    
+}
+
+
+
+
+.loading-wrapper {
+    width:100%;
+    height:95vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50px; 
+    height:50px;
+    background:url('https://www.greencode.co.il/wp-content/uploads/2024/09/framework-3416_256.gif');
+    background-size:cover;
+}

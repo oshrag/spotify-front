@@ -1,0 +1,52 @@
+.user-msg {
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    line-height: 1em;
+    //position: fixed;
+    //bottom: 12%;
+    //left: 44%;
+    //background-color: $user-msg-clr1;
+    z-index:99;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: fixed;
+    width:100%;
+    bottom:100px;
+
+    @include for-mobile-layout {
+        bottom:50px;
+    }
+
+    & .user-msg-inner {
+        width: auto;
+        padding:10px;
+        border: 1px solid black;
+        background-color: $user-msg-background;
+        color: $user-msg-clr;
+        border-radius:10px;
+        display:grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+
+        & button{
+            order: 2;
+            & svg {fill:$user-msg-clr;} 
+        }
+    }
+
+}
+
+
+
+// .user-msg.success .user-msg-inner {
+//     background-color: $user-msg-success;
+// }
+
+// .user-msg.error .user-msg-inner {
+//     background-color: $user-msg-warrning;
+// }

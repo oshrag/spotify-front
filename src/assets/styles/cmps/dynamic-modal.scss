@@ -1,0 +1,138 @@
+.modal-backdrop {
+    position: fixed;
+    background-color: rgba(16, 16, 16, 0.5);
+    inset: 0;
+    z-index: 7;
+   
+}
+
+.modal-content {
+    //position: fixed;
+    user-select: none;
+
+    position: absolute;
+    font-size: 1.1em;
+    inset: 0;
+    width: 25vw;
+    height: fit-content;
+    padding: 3px;
+    background: $dark-clr4;
+    color: white;
+    z-index: 8;
+    border-radius: 5px;
+    display: grid;
+    // align-content: start;
+    justify-content: stretch;
+
+    & ul {
+        list-style: none;
+        // padding-left:10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    & ul li {
+        padding: 10px;
+
+        & span {
+            font-size: 14px;
+        }
+
+        &:hover {
+            background-color: $dark-clr5;
+        }
+    }
+
+
+    @include for-mobile-layout {
+        & {
+            width: 100%;
+            top: inherit;
+            bottom: 0;
+        }
+
+
+        //petch
+        &.floating-menu-user {
+            top: 50px;
+            left: 255px;
+        }
+    }
+
+
+
+    & ul li.lastInGroup {
+        border-bottom: 1px solid $gray4;
+    }
+
+
+    .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    p {
+        text-align: center;
+        margin: 15px;
+    }
+
+
+
+    &.floating-menu-song-add {
+        width: 280px;
+        max-width:280px;
+
+        @include for-mobile-layout {
+            width: 100%;
+            max-width:100%;
+        }
+
+    }
+
+    &.floating-menu-song {
+        align-items: start;
+        width: 240px;
+        max-width:240px;
+
+        @include for-mobile-layout {
+            width: 100%;
+            max-width:100%;
+        }
+
+    }
+
+    &.floating-menu-user {
+        width: 150px;
+        padding: 6px 0 10px 12px;
+
+        &:hover {
+            background-color: $bgc-user-modal-hover;
+        }
+    }
+
+
+    &.floating-edit-station-details {
+        margin: auto;
+        width: 500px;
+      
+        @include for-mobile-layout {
+            width: 100%;
+        }
+
+
+    }
+
+    &.floating-menu-station {
+        width: 250px;
+        max-width:250px;
+
+
+        @include for-mobile-layout {
+            width: 100%;
+            max-width:100%;
+        }
+    }
+
+
+}

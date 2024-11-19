@@ -1,0 +1,261 @@
+.station-index {
+    display: grid;
+    // grid-template-columns: 0.5fr 1.3fr 0px;
+    // grid-template-rows: 0.5em 0.4fr 2.3fr 0.3fr;
+    // grid-template-areas:
+    //     "s s s"
+    //     "a m c"
+    //     "a m c"
+    //     "f f f";
+    gap: 0 10px;
+    height: 100%;
+
+
+
+    @include for-mobile-layout {
+        // grid-template-columns: 1fr;
+        grid-template-rows: 0.5em 1fr 100px 100px;
+        grid-template-areas:
+            "s s s s s"
+            "m m m m m"
+            "f f f f f"
+            "a a a a a";
+
+    }
+
+    @include for-wide-layout {
+        grid-template-columns: 0.5fr 1.3fr 0px;
+        grid-template-rows: 0.5em 0.4fr 2.3fr 0.3fr;
+        grid-template-areas:
+            "s s s"
+            "a m c"
+            "a m c"
+            "f f f";
+    }
+
+
+
+
+    &.display-card {
+        grid-template-columns: 0.5fr 0.8fr 0.5fr;
+    }
+
+    &.expend-lib {
+        grid-template-columns: 0.7fr 0.8fr 0px;
+    }
+
+    header {
+        //grid-area: h;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // align-items: center;
+        padding: 10px;
+        // align-content: center;
+        // grid-auto-flow: column;
+        // justify-content: start;
+        gap: 5px;
+        z-index:1;
+
+
+        // form {
+        //     display: grid;
+        //     grid-auto-flow: column;
+        //     justify-content: start;
+        //     align-content: center;
+        //     width: 100%;
+
+        //     .icon-search {
+        //         width: max-content;
+        //         align-self: center;
+        //     }
+
+        //     input {
+        //         background-color: $bgc-search;
+        //         border-radius: 500px;
+        //         border: 0;
+        //         height: 48px;
+        //         color: white;
+        //     }
+        // }
+    }
+
+    main {
+        grid-area: m;
+        overflow: auto;
+        // overflow-y: overlay;
+        transition: overflow 0.3s ease;
+        grid-column-end: 6;
+    }
+
+    aside {
+        grid-area: a;
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
+        gap: 10px;
+
+        &>* {
+            padding: 20px 0 20px 10px;
+        }
+
+        @include for-mobile-layout {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+
+        nav {
+            grid-area: 1 / 1;
+
+            display: grid;
+            grid-template-rows: auto auto;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 15px;
+
+            & button {
+                padding-inline: 0; //when change link to button (for mobile)
+            }
+
+
+
+
+            @include for-mobile-layout {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+            }
+
+
+        }
+
+        .library {
+            grid-area: 2 / 2;
+            // overflow-x :auto;
+            overflow: hidden;
+
+
+
+            @include for-mobile-layout {
+                display: none;
+
+            }
+
+
+            & .library-pannel {
+                display: grid;
+                grid-template-columns: 1fr auto auto;
+                justify-items: start;
+                // padding:10px;
+            }
+
+            & .library-types {
+                padding: 15px 0px;
+            }
+
+
+            & .search-in-lib {
+                position: relative;
+
+                & .btn-icon {
+                    width: 40px;
+                    transition: all 500ms;
+                    height: 3em;
+                }
+
+                input {
+                    display: none;
+                    border: 0;
+                    outline: none;
+                    background-color: $input-bgc-clr;
+                    color: $input-text-clr1;
+                    font-weight: bold;
+                }
+
+                ::placeholder {
+                    color: $input-text-clr1;
+                    font-size: 14px;
+                }
+
+                &:hover input {
+                    display: block;
+                }
+
+                &:hover .btn-icon {
+                    width: 250px;
+                }
+
+                display:grid;
+                grid-template-columns: auto auto;
+                justify-content: start;
+            }
+
+            & .station-list-wrapper {
+                height: 87%;
+                overflow: scroll;
+                overflow-x: hidden;
+                padding-block-end: 20px;
+
+                // @include for-mobile-layout {
+                //     display:none;
+                // }
+            }
+
+
+
+
+        }
+    }
+
+    footer {
+        grid-area: f;
+
+        // position: absolute;
+        bottom: 10px;
+        width: 100%;
+    }
+
+
+    .card {
+        grid-area: c;
+
+    }
+}
+
+
+.station-index header,
+.station-index main,
+.station-index aside nav,
+.station-index aside .library {
+    background-color: $dark-clr1;
+    border-radius: 10px;
+}
+
+// .station-index header {
+//     grid-area: h;
+// }
+
+// .station-index main {
+//     grid-area: m;
+//     overflow-x: auto;
+// }
+
+// .station-index aside {
+//     grid-area: a;
+//     display: grid;
+//     grid-template-columns: subgrid;
+//     grid-template-rows: subgrid;
+//     gap: 10px;
+// }
+
+// .station-index aside nav {
+//     grid-area: 1 / 1;
+// }
+
+// .station-index aside .library {
+//     grid-area: 2 / 2;
+// }
+
+// .station-index footer {
+//     grid-area: f;
+// }

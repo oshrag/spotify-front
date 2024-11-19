@@ -1,0 +1,28 @@
+.station-preview {
+    list-style-type: none;
+    cursor: pointer;
+    padding:10px;
+
+    &.modal-add {
+        .intro-inner {
+            grid-auto-flow: column;
+        }
+    }
+
+    .station-container {
+        .empty-circle {
+            block-size: 16px;
+            border: 1px solid #727272;
+            border-radius: 50%;
+            display: inline-block;
+            inline-size: 16px;
+            justify-self: end
+        }
+
+        // @include for-mobile-layout {
+        //     & span {
+        //         display: none;
+        //     }
+        // }
+    }
+}

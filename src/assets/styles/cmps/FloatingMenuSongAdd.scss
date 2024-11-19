@@ -1,0 +1,61 @@
+
+.floating-menu-song-add {
+    align-items: start;
+    // width: 20vw;
+    padding:0;
+   
+    // overflow-y: scroll;
+
+    & ul {
+        max-height: 300px;
+        overflow-y: scroll;
+
+        scrollbar-color: $dark-clr3 $dark-clr3;
+
+        &:hover {
+            scrollbar-color: $dark-clr5 $dark-clr3;
+        }
+    }
+
+
+
+    .cancel-done-btns {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: end;
+        padding:5px 10px;
+
+        & button {
+            color: $btn-text-clr1;
+            font-weight: bold;
+            background-color: inherit;
+            border-radius:25px;
+            border:1px solid $dark-clr3;
+
+            &:hover {
+                color: $light-clr1;
+                font-size:14px;
+            }
+
+            &.done {
+                color: $dark-clr2;
+                background-color: $light-clr1;
+
+                &:hover {
+                    border:0px solid red; // strange but needed
+                }
+            }
+
+
+        }
+
+
+      
+    }
+
+    & i.active {margin:-2px;}
+
+
+
+    
+}

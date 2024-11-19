@@ -1,0 +1,65 @@
+.search-result {
+
+    .search-result-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+        padding: 15px;
+
+
+        @include for-mobile-layout {
+            grid-template-columns: 1fr;
+        }
+
+        & h2 {
+            padding-left: 10px;
+        }
+
+        & .inner-grid {
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+
+        & .top-result-container {
+            display: grid;
+            grid-template-rows: 10px 1fr 1fr auto 10px;
+            grid-template-columns: 10px 1fr 10px;
+            align-items: center;
+            background-color: $bgc-top-result;
+            border-radius: 15px;
+          
+
+            & > * { grid-column: 2;}
+
+            & img {
+                width: 150px;
+                border-radius: 15px;
+                grid-row: 2;
+            }
+
+            & .name {
+                font-size: 2em;
+                font-weight:bold;
+                margin: 0;
+                grid-row: 3;
+            }
+
+            & .type {
+                grid-row: 4;
+                & .song:after {
+                    content: " • ";
+                }
+            }
+
+        }
+
+        & ul.song-list {
+            display: grid;
+        }
+
+        .span-no-results {
+            grid-column: 1/-1;
+            padding-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.song-floating-menu {
+
+    // @include for-mobile-layout {
+    //     width: 100%;
+    // }
+
+    ul {
+        list-style:none;
+        padding-left:0;
+    }
+
+    ul li {
+        padding:10px;
+    }
+
+    ul li ul.station-list {
+       
+        display:none;
+    }
+    
+    ul li h3 {
+        display:none;
+    }
+
+    ul li:hover ul.station-list {
+        padding:5px;
+        display:block;
+        position:absolute;
+        right: 100%;
+        top: 0;
+        width: 200px;
+        background:$dark-clr3;
+        border-radius:3px;
+        li {
+            border-radius:3px;
+
+            h5 {
+                font-weight:normal;
+                font-size:14px;
+                color: $btn-text-clr1;
+            }
+        }
+
+
+
+       
+    }
+
+
+   
+    
+
+}

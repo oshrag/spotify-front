@@ -1,0 +1,50 @@
+.song-list {
+  padding-left:0;
+
+
+
+  & .song-preview-station-grid {
+    display: grid;
+    grid-template-columns: 0.2fr 2fr 0.5fr 0.2fr 0.2fr 0.1fr;
+    align-items: center;
+    padding: 5px 25px;
+
+    color:$input-text-clr1;
+
+  
+
+
+    & .song-duration {
+      @include for-mobile-layout { 
+        visibility:hidden;
+      }
+      &span {
+        justify-self: end;
+      }
+
+     
+      & i {fill: $input-text-clr1; padding-left:6px;}
+    }
+    
+      
+    
+    & .intro-outer { color: $input-text-clr2;}
+
+
+    @include for-mobile-layout {
+
+      grid-template-columns: 0 1fr  0.1fr 0fr;
+      // grid-template-columns: 0 1.2fr 0fr 0.1fr 0fr;
+      padding: 5px 5px;
+      & label:first-child  {display:none;}
+      & label:nth-child(3)  {display:none;}
+      & div:first-child .num {display:none;}
+      & span.date {display:none;}
+      // & span.add {display:none;}
+      & span.add {visibility:hidden;}
+
+    }
+  }
+
+ 
+}

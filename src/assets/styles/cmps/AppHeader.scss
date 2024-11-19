@@ -1,0 +1,98 @@
+.app-header {
+
+    position: sticky;
+    top: 0;
+    // z-index: 9999;
+
+
+    background-color: $light-clr1;
+    padding: 10px;
+
+
+    @include for-mobile-layout {
+        grid-column: span 2;
+    }
+
+    .user-info {
+        // background-color: $dark-clr2;
+        // padding: 2px 8px;
+        justify-self: end;
+        color: $dark-clr1;
+        cursor: pointer;
+
+        span {
+            //background-color:black;
+            color: $dark-clr3;
+            padding: 3px;
+            border-radius: 15px;
+            display: grid;
+
+            small {
+                padding: 2px 6px;
+                border-radius: 15px;
+            }
+        }
+
+    }
+
+    .user-info .btn-link {
+        color: $dark-clr2;
+    }
+
+    nav {
+        font-size: .8em;
+        background-color: $primery-clr;
+        padding: 5px;
+
+    }
+
+    nav a:first-child {
+        margin-right: 30px;
+    }
+
+    nav a:not(:first-child) {
+        border-top: 1px solid $dark-clr1;
+        padding: 0 5px;
+        margin: 10px;
+    }
+
+    nav .active {
+        color: $dark-clr1;
+    }
+
+    .btns-login-signup {
+        justify-self: end;
+
+        .btn-login,
+        .btn-signup {
+            font-weight: bold;
+
+            &:hover {
+                transform: scale(1.04);
+            }
+        }
+
+        .btn-signup {
+            color: $gray5;
+            padding-inline-end: 28px;
+
+            &:hover {
+                color: $light-clr2;
+            }
+        }
+
+        .btn-login {
+            background-color: white;
+            border-radius: 25px;
+            padding-inline: 25px;
+            padding-block: 12px;
+        }
+    }
+
+    .btn-back,
+    .btn-forward {
+        i {
+            background-color: $bgc-back-forward-btns
+        }
+    }
+}
