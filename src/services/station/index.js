@@ -1,13 +1,18 @@
 
 const { DEV, VITE_LOCAL } = import.meta.env
 
+
+
 import { stationService as remote } from './station.service.remote.js'
 import { stationService as local } from './station.service.local.js'
 
 import { getLoggedInUser } from '../../store/actions/user.actions.js'
 
 
-const API_KEY = 'AIzaSyCUE7BdmEO9uF_gWcV5yY5O3eqyINxdavo'
+
+const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY
+
+
 
 
 function createEmptyStation() {
