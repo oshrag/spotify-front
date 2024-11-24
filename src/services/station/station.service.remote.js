@@ -14,10 +14,11 @@ export const stationService = {
     getUserLikedSongs,
     removeSongFromStation,
     addStationToLibrary,
-    removeStationFromLibrary
+    removeStationFromLibrary,
     // reorderSongInStation,
     // getEmptyCar,
     // addCarMsg
+    getSongsFromYoutube
 }
 window.ss = stationService
 
@@ -152,5 +153,13 @@ function getEmptyCar() {
 
 
 
+async function getSongsFromYoutube(userInput, location = '') {
+
+    console.log('remote')
+   
+    return httpService.get(`youtube/?userInput=${userInput}&location=${location}`)
+
+ 
+}
 
 
